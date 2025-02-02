@@ -10,26 +10,31 @@
 
 .timeline-line {
 	position: relative;
-	width: 100%;
+	left: 150px;
 	height: 2px;
-	background-color: #000;
+	background-color: white;
 	margin: 20px 0;
 }
 
-.tick {
+.tick,
+.half-tick,
+.decade-tick {
 	position: absolute;
 	width: 2px;
 	height: 10px;
-	background-color: #000;
+	background-color: white;
 	top: -4px;
 	cursor: pointer; /* Change cursor to pointer */
 }
 
-.tick:hover .event-card {
+.tick:hover .event-card,
+.half-tick:hover .event-card,
+.decade-tick:hover .event-card {
 	display: block; /* Show event card on hover */
 }
 
 .tick-label {
+	color: white;
 	position: absolute;
 	top: 10px;
 	transform: translateX(-50%);

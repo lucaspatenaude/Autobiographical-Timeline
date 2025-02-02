@@ -1,35 +1,35 @@
 <div class="page-container">
 
 	<div class="timeline-container">
-		<div class="timeline-line">
-			{{> timeline/event-tick year=1998 title="Year of birth" description="This is the year I was born." }}
-			{{> timeline/tick year=1999 }}
-			{{> timeline/tick year=2000 }}
-			{{> timeline/event-tick year=2001 title="Started school" description="I started school this year." }}
-			{{> timeline/tick year=2002 }}
-			{{> timeline/event-tick year=2003 title="Moved to a new city" description="We moved to a new city this year." }}
-			{{> timeline/tick year=2004 }}
-			{{> timeline/tick year=2005 }}
-			{{> timeline/tick year=2006 }}
-			{{> timeline/tick year=2007 }}
-			{{> timeline/tick year=2008 }}
-			{{> timeline/tick year=2009 }}
-			{{> timeline/tick year=2010 }}
-			{{> timeline/tick year=2011 }}
-			{{> timeline/tick year=2012 }}
-			{{> timeline/tick year=2013 }}
-			{{> timeline/tick year=2014 }}
-			{{> timeline/tick year=2015 }}
-			{{> timeline/tick year=2016 }}
-			{{> timeline/tick year=2017 }}
-			{{> timeline/tick year=2018 }}
-			{{> timeline/tick year=2019 }}
-			{{> timeline/tick year=2020 }}
-			{{> timeline/tick year=2021 }}
-			{{> timeline/tick year=2022 }}
-			{{> timeline/tick year=2023 }}
-			{{> timeline/tick year=2024 }}
-			{{> timeline/tick year=2025 }}
+		<div class="timeline-line" style="min-width: calc(28 * 200px);"> <!-- 28 years from 1998 to 2025 -->
+			{{> timeline/ticks/event-tick year=1998 title="Year of birth" description="This is the year I was born." }}
+			{{> timeline/ticks/tick type="tick" year=1999 }}
+			{{> timeline/ticks/tick type="decade-tick" year=2000 }}
+			{{> timeline/ticks/event-tick type="tick" year=2001 title="Started school" description="I started school this year." }}
+			{{> timeline/ticks/tick type="tick" year=2002 }}
+			{{> timeline/ticks/event-tick type="tick" year=2003 title="Moved to a new city" description="We moved to a new city this year." }}
+			{{> timeline/ticks/tick type="tick" year=2004 }}
+			{{> timeline/ticks/tick type="half-tick" year=2005 }}
+			{{> timeline/ticks/tick type="tick" year=2006 }}
+			{{> timeline/ticks/tick type="tick" year=2007 }}
+			{{> timeline/ticks/tick type="tick" year=2008 }}
+			{{> timeline/ticks/tick type="tick" year=2009 }}
+			{{> timeline/ticks/tick type="decade-tick" year=2010 }}
+			{{> timeline/ticks/tick type="tick" year=2011 }}
+			{{> timeline/ticks/tick type="tick" year=2012 }}
+			{{> timeline/ticks/tick type="tick" year=2013 }}
+			{{> timeline/ticks/tick type="tick" year=2014 }}
+			{{> timeline/ticks/tick type="half-tick" year=2015 }}
+			{{> timeline/ticks/tick type="tick" year=2016 }}
+			{{> timeline/ticks/tick type="tick" year=2017 }}
+			{{> timeline/ticks/tick type="tick" year=2018 }}
+			{{> timeline/ticks/tick type="tick" year=2019 }}
+			{{> timeline/ticks/tick type="decade-tick" year=2020 }}
+			{{> timeline/ticks/tick type="tick" year=2021 }}
+			{{> timeline/ticks/tick type="tick" year=2022 }}
+			{{> timeline/ticks/tick type="tick" year=2023 }}
+			{{> timeline/ticks/tick type="tick" year=2024 }}
+			{{> timeline/ticks/tick type="half-tick" year=2025 }}
 		</div>
 	</div>
 </div>
