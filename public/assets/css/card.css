@@ -1,0 +1,22 @@
+.card {
+	color: green;
+	flex-direction: column;
+	margin: 20px;
+	border: 1px solid #979696;
+	border-radius: 8px;
+	display: inline-block; /* Ensure cards are inline for nowrap */
+}
+
+.event-card {
+	display: none; /* Hide event card by default */
+	position: absolute;
+	top: -300px; /* Position it below the tick */
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #fff;
+	border: 1px solid #979696;
+	border-radius: 8px;
+	padding: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	z-index: 99; /* Ensure it appears above other elements */
+}

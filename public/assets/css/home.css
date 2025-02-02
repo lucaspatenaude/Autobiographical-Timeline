@@ -18,7 +18,7 @@ body {
 }
 
 .page-container {
-	height: 90vh; /* Set a fixed height */
+	height: 88vh; /* Set a fixed height */
 	margin: 30px;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -36,8 +36,9 @@ h1 {
 
 /* Page Footer */
 footer {
-	height: 70px; /* 2% of the height */
 	text-align: center;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Footer Icons */
