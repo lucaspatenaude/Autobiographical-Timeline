@@ -39,6 +39,7 @@ body {
 .decade-tick {
 	position: absolute;
 	background-color: white;
+	border-radius: 6px;
 	top: -4px;
 	cursor: pointer; /* Change cursor to pointer */
 	z-index: 10; /* Ensure ticks are above the timeline line */
@@ -46,17 +47,19 @@ body {
 
 .tick {
 	height: 10px; /* Corrected height */
-	width: 2px; /* Corrected width */
+	width: 4px; /* Corrected width */
 }
 
 .half-tick {
-	height: 15px; /* Corrected height */
-	width: 2px; /* Corrected width */
+	top: -8px;
+	height: 20px; /* Corrected height */
+	width: 6px; /* Corrected width */
 }
 
 .decade-tick {
-	height: 20px; /* Corrected height */
-	width: 2px; /* Corrected width */
+	top: -15px;
+	height: 35px; /* Corrected height */
+	width: 6px; /* Corrected width */
 }
 
 .tick:hover .event-card,
@@ -66,19 +69,39 @@ body {
 }
 
 .tick-label {
-	color: white;
+	color: rgb(239, 238, 238);
+	text-align: left;
 	position: absolute;
-	top: 10px;
+	top: 20px;
 	transform: translateX(-50%);
-	font-size: 12px;
+	font-weight: 650;
+	font-size: 25px;
 }
 
 .half-tick .tick-label {
 	top: 20px;
+	font-size: 35px;
+	font-weight: 700;
 }
 
 .decade-tick .tick-label {
-	top: 30px;
+	top: 40px;
+	font-size: 50px;
+	font-weight: 900;
+}
+
+.tick-label:hover {
+	color: white;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+	font-size: calc(1.1 * 25px); /* Increase by 20% */
+}
+
+.half-tick .tick-label:hover {
+	font-size: calc(1.1 * 35px); /* Increase by 20% */
+}
+
+.decade-tick .tick-label:hover {
+	font-size: calc(1.1 * 50px); /* Increase by 20% */
 }
 
 .card {
@@ -93,7 +116,7 @@ body {
 .event-card {
 	display: none; /* Hide event card by default */
 	position: absolute;
-	top: 20px; /* Position it below the tick */
+	top: -300px; /* Position it below the tick */
 	left: 50%;
 	transform: translateX(-50%);
 	background-color: #fff;
