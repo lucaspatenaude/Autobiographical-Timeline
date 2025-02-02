@@ -18,13 +18,11 @@ body {
 	align-items: center;
 	overflow-x: auto; /* Enable horizontal scrolling */
 	white-space: nowrap; /* Prevent wrapping of cards */
-	/* Hide scrollbar */
-	-ms-overflow-style: none;  /* IE and Edge */
-	scrollbar-width: none;  /* Firefox */
+	scrollbar-width: none; /* Firefox */
 }
 
 .timeline-container::-webkit-scrollbar {
-	display: none;  /* Chrome, Safari, and Opera */
+	display: none; /* Chrome, Safari, and Opera */
 }
 
 .timeline-line {
@@ -40,11 +38,25 @@ body {
 .half-tick,
 .decade-tick {
 	position: absolute;
-	width: 2px;
-	height: 10px;
 	background-color: white;
 	top: -4px;
 	cursor: pointer; /* Change cursor to pointer */
+	z-index: 10; /* Ensure ticks are above the timeline line */
+}
+
+.tick {
+	height: 10px; /* Corrected height */
+	width: 2px; /* Corrected width */
+}
+
+.half-tick {
+	height: 15px; /* Corrected height */
+	width: 2px; /* Corrected width */
+}
+
+.decade-tick {
+	height: 20px; /* Corrected height */
+	width: 2px; /* Corrected width */
 }
 
 .tick:hover .event-card,
@@ -59,6 +71,14 @@ body {
 	top: 10px;
 	transform: translateX(-50%);
 	font-size: 12px;
+}
+
+.half-tick .tick-label {
+	top: 20px;
+}
+
+.decade-tick .tick-label {
+	top: 30px;
 }
 
 .card {
