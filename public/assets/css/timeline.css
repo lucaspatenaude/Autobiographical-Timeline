@@ -1,4 +1,5 @@
 .timeline-container {
+	height: 100vh;
 	display: flex;
 	flex-direction: row; /* Ensure cards are in a row */
 	justify-content: flex-start; /* Align items to the start */
@@ -44,8 +45,7 @@
 	display: inline-block; /* Ensure cards are inline for nowrap */
 }
 
-#event-card {
-	color: green;
+.event-card {
 	display: none; /* Hide event card by default */
 	position: absolute;
 	top: 20px; /* Position it below the tick */
