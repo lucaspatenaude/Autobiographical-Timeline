@@ -1,5 +1,15 @@
+@font-face {
+	font-family: "Circular";
+	src: url("/Users/lucas/Developer/1-Autobiographical-Timeline/public/assets/fonts/circular-std/CircularStd-Bold.woff2")
+		format("woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
 	background: linear-gradient(to top, darkorange, orange);
+	color: white;
+	font-family: "Circular", sans-serif;
 }
 
 .page-container {
@@ -9,6 +19,14 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	flex-direction: row;
+}
+
+h1 {
+	font-size: 2.5rem;
+	position: absolute;
+	top: 30px;
+	left: 50px;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 footer {
