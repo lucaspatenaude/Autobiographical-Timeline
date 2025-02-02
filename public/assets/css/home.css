@@ -19,6 +19,7 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	flex-direction: row;
+	scrollbar-width: none;
 }
 
 h1 {

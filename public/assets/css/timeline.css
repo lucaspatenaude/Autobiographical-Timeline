@@ -18,6 +18,13 @@ body {
 	align-items: center;
 	overflow-x: auto; /* Enable horizontal scrolling */
 	white-space: nowrap; /* Prevent wrapping of cards */
+	/* Hide scrollbar */
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+
+.timeline-container::-webkit-scrollbar {
+	display: none;  /* Chrome, Safari, and Opera */
 }
 
 .timeline-line {
