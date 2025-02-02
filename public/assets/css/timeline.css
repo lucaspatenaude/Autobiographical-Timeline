@@ -12,6 +12,7 @@ body {
 }
 
 .timeline-container {
+	left: 100px;
 	height: 100%; /* Set a fixed height */
 	position: relative;
 	display: flex;
@@ -31,7 +32,6 @@ body {
 
 .timeline-line {
 	position: relative;
-	left: 150px;
 	height: 4px;
 	background-color: white;
 	margin: 20px 0;
@@ -63,8 +63,8 @@ body {
 
 .decade-tick {
 	top: -10px;
-	height: 25px; /* Corrected height */
-	width: 6px; /* Corrected width */
+	height: 23px; /* Corrected height */
+	width: 5px; /* Corrected width */
 }
 
 .tick:hover .event-card,
@@ -90,8 +90,8 @@ body {
 }
 
 .decade-tick .tick-label {
-	top: 25px;
-	font-size: 50px;
+	top: 30px;
+	font-size: 43px;
 	font-weight: 800;
 }
 
@@ -108,5 +108,3 @@ body {
 .decade-tick .tick-label:hover {
 	font-size: calc(1.1 * 50px); /* Increase by 20% */
 }
-
-

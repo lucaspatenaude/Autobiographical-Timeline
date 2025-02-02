@@ -26,11 +26,11 @@ body {
 	scrollbar-width: none;
 }
 
-h1 {
+#page-title {
 	font-size: 2rem;
 	position: absolute;
 	top: 30px;
-	left: 50px;
+	left: 120px;
 	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 

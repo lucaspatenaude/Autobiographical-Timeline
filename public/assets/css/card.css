@@ -1,22 +1,30 @@
-.card {
-	color: green;
-	flex-direction: column;
-	margin: 20px;
-	border: 1px solid #979696;
-	border-radius: 8px;
-	display: inline-block; /* Ensure cards are inline for nowrap */
-}
-
 .event-card {
 	display: none; /* Hide event card by default */
 	position: absolute;
-	top: -300px; /* Position it below the tick */
-	left: 50%;
-	transform: translateX(-50%);
-	background-color: #fff;
-	border: 1px solid #979696;
+	height: fit-content;
+	top: -250px;
+	left: -125px;
+	background-color: white;
 	border-radius: 8px;
-	padding: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 5px;
 	z-index: 99; /* Ensure it appears above other elements */
+}
+
+.event-content {
+	background-color: white;
+	display: flex;
+	flex-direction: column; /* Ensure title and description are in a column */
+	padding: 5px;
+}
+
+.event-header {
+	margin: 0 0 10px 0; /* Add bottom margin to separate from description */
+	font-size: 15px;
+	color: black;
+}
+
+.event-description {
+	margin: 0;
+	font-size: 13px;
+	color: black;
 }
