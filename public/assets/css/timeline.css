@@ -120,3 +120,26 @@ body {
 .decade-tick .tick-label:hover {
 	font-size: calc(1.1 * 50px); /* Increase by 20% */
 }
+
+.event-indicator {
+	position: absolute;
+	display: flex; /* Use flexbox */
+	align-items: center; /* Center vertically */
+	justify-content: center; /* Center horizontally */
+	background-color: white;
+	border-radius: 50%;
+	box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+	height: 25px;
+	width: 25px;
+	top: -5px;
+	left: -5px;
+}
+
+.event-indicator img {
+	width: 50%;
+	height: 50%;
+}
+
+#home-event {
+	left: 100px;
+}

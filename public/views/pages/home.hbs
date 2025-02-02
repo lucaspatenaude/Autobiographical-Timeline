@@ -2,12 +2,24 @@
 	<h1 id="page-title">Lucas Patenaude's Timeline</h1>
 	<div class="timeline-container">
 		<div class="timeline-line" style="min-width: calc(28 * 200px);"> <!-- 28 years from 1998 to 2025 -->
-			{{> timeline/ticks/event-tick year=1998 title="July 20th, 1998" description="I was born July 20th, 1998 in Minnesota" }}
+			{{> timeline/ticks/event-tick year=1998 
+				title="July 20th, 1998" 
+				description="I was born July 20th, 1998 in Minnesota" 
+				event-id="birth-event"
+			}}
 			{{> timeline/ticks/tick type="tick" year=1999 }}
 			{{> timeline/ticks/tick type="decade-tick" year=2000 }}
-			{{> timeline/ticks/event-tick type="tick" year=2001 title="Started school" description="I started school this year." }}
+			{{> timeline/ticks/event-tick type="tick" year=2001 
+				title="Started school" 
+				description="I started school this year." 
+				event-id="school-event"
+			}}
 			{{> timeline/ticks/tick type="tick" year=2002 }}
-			{{> timeline/ticks/event-tick type="tick" year=2003 title="Moved to a new city" description="We moved to a new city this year." }}
+			{{> timeline/ticks/event-tick type="tick" year=2003 
+				event-icon="img/event-icons/home.png" event-id="home-event"
+				title="Moved to a new city" 
+				description="We moved to a new city this year."
+			}}
 			{{> timeline/ticks/tick type="tick" year=2004 }}
 			{{> timeline/ticks/tick type="half-tick" year=2005 }}
 			{{> timeline/ticks/tick type="tick" year=2006 }}
