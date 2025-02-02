@@ -1,3 +1,15 @@
+@font-face {
+	font-family: "CustomFont";
+	src: url("/path/to/font.woff2") format("woff2"),
+		url("/path/to/font.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: "CustomFont", sans-serif;
+}
+
 .timeline-container {
 	height: 100vh;
 	display: flex;
@@ -14,6 +26,7 @@
 	height: 2px;
 	background-color: white;
 	margin: 20px 0;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .tick,
