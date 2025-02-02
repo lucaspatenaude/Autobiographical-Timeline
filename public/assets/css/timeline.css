@@ -38,6 +38,20 @@ body {
 	box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
 }
 
+.micro-ticks {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 1px;
+}
+
+.micro-tick {
+	position: absolute;
+	width: 1px;
+	height: 5px;
+	background-color: white;
+}
+
 .tick,
 .half-tick,
 .decade-tick {
@@ -56,14 +70,12 @@ body {
 }
 
 .half-tick {
-	top: -8px;
 	height: 20px; /* Corrected height */
 	width: 6px; /* Corrected width */
 }
 
 .decade-tick {
-	top: -10px;
-	height: 23px; /* Corrected height */
+	height: 26px; /* Corrected height */
 	width: 5px; /* Corrected width */
 }
 
@@ -78,7 +90,7 @@ body {
 	text-align: left;
 	position: absolute;
 	top: 25px;
-	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 	font-weight: 650;
 	font-size: 25px;
 }
