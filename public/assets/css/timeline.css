@@ -107,10 +107,11 @@ body {
 	font-weight: 800;
 }
 
-.tick-label:hover {
+.event-indicator:hover {
 	color: white;
 	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
-	font-size: calc(1.1 * 25px); /* Increase by 20% */
+	height: calc(1.3 * 25px); /* Increase by 20% */
+	width: calc(1.3 * 25px); /* Increase by 20% */
 }
 
 .half-tick .tick-label:hover {

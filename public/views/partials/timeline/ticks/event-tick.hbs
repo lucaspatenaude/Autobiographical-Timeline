@@ -1,7 +1,10 @@
-<div class="tick" style="left: calc(({{year}} - 1998) * 200px);">
+<div class="{{type}}" style="left: calc(({{year}} - 1998) * 200px);">
   <div class="tick-label">{{year}}</div>
 	<div class="event-indicator" id="{{event-id}}">
-    <img src="{{event-icon}}" alt="Event Image" />
+    <img src="{{event-icon}}" alt="Event Image" /i>
+		<div class="event-card">
+			{{> timeline/event-card title=title description=description }}
+		</div>
   </div>
 	<div class="micro-ticks">
 		<div class="micro-tick" style="left: calc(0 * (200px / 12));"></div>
@@ -17,7 +20,5 @@
 		<div class="micro-tick" style="left: calc(10 * (200px / 12));"></div>
 		<div class="micro-tick" style="left: calc(11 * (200px / 12));"></div>
 	</div>
-	<div class="event-card">
-		{{> timeline/event-card title=title description=description }}
-	</div>
+	
 </div>
