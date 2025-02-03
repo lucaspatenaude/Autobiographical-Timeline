@@ -18,7 +18,7 @@ body {
 }
 
 .page-container {
-	height: 88vh; /* Set a fixed height */
+	height: 86vh; /* Set a fixed height */
 	margin: 30px;
 	flex-wrap: wrap;
 	justify-content: center;
