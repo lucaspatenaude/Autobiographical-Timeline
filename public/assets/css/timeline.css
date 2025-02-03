@@ -54,22 +54,22 @@
 	box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
 	top: -5px;
 	cursor: default;
-	z-index: 10; /* Ensure ticks are above the timeline line */
+	z-index: 3; 
 }
 
 .tick {
-	height: 15px; /* Corrected height */
-	width: 5px; /* Corrected width */
+	height: 15px;
+	width: 5px;
 }
 
 .half-tick {
-	height: 20px; /* Corrected height */
-	width: 6px; /* Corrected width */
+	height: 20px; 
+	width: 6px; 
 }
 
 .decade-tick {
-	height: 26px; /* Corrected height */
-	width: 5px; /* Corrected width */
+	height: 26px; 
+	width: 5px; 
 }
 
 /* -------------- Tick Labels -------------- */
