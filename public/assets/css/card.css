@@ -1,29 +1,50 @@
 .event-card {
 	display: none; /* Hide event card by default */
 	position: absolute;
+	left: -50px;
 	height: fit-content;
-	top: -250px;
-	background-color: white;
-	border-radius: 8px;
-	padding: 5px;
 	z-index: 99; /* Ensure it appears above other elements */
+	margin-bottom: 600px;
+}
+
+.event-container {
+	display: flex;
+	flex-direction: row; /* Place photo and content in a row */
+	align-items: flex-start; /* Align items to the top */
 }
 
 .event-content {
-	background-color: white;
+	background-color: rgb(238, 132, 18);
+	border: 4px solid rgb(178, 101, 6); /* Black border */
+
+	text-shadow: none;
+	border-radius: 8px;
 	display: flex;
-	flex-direction: column; /* Ensure title and description are in a column */
 	padding: 5px;
+	padding-right: 35px;
+	padding-left: 15px;
+	flex-direction: column; /* Ensure title and description are in a column */
+	box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
 }
 
 .event-header {
-	margin: 0 0 10px 0; /* Add bottom margin to separate from description */
-	font-size: 15px;
-	color: black;
+	margin: 0 5px; /* Add bottom margin to separate from description */
+	font-size: 12px;
+	color: rgb(255, 250, 250);
 }
 
 .event-description {
 	margin: 0;
 	font-size: 13px;
-	color: black;
+	color: rgb(255, 255, 255);
+}
+
+.event-photo {
+	position: relative;
+	min-width: 400px;
+	min-height: auto; /* Maintain aspect ratio */
+	margin-right: 10px; /* Add some space between photo and content */
+	border-radius: 8px; /* Optional: add some border radius */
+	border: 4px solid rgb(178, 101, 6); /* Black border */
+	box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
 }

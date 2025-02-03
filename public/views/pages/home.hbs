@@ -2,8 +2,11 @@
 	<h1 id="page-title">Lucas Patenaude's Timeline</h1>
 	<div class="timeline-container">
 		<div class="timeline-line" style="min-width: calc(28 * 200px);"> <!-- 28 years from 1998 to 2025 -->
+			{{> timeline/ticks/tick type="tick" year=1996 }}
+			{{> timeline/ticks/tick type="tick" year=1997 }}
 			{{> timeline/ticks/event-tick type="tick" year=1998 
-				event-icon="img/event-icons/child.png" event-id="birth-event"
+				event-icon="child.png" event-id="birth-event"
+				event-picture="hospital.jpg"
 				title="July 20th, 1998" 
 				description="I was born July 20th, 1998 in Minnesota" 
 			}}
@@ -12,17 +15,18 @@
 			{{> timeline/ticks/tick type="tick" year=2001 }}
 			{{> timeline/ticks/tick type="tick" year=2002 }}
 			{{> timeline/ticks/event-tick type="tick" year=2003 
-				event-icon="img/event-icons/home.png" event-id="home-event"
+				event-icon="home.png" event-id="home-event"
+				event-picture="home.jpg"
 				title="July 2003" 
 				description="In July 2003, I moved into my childhood home"
 			}}
 			{{> timeline/ticks/event-tick type="tick" year=2004
-				event-icon="img/event-icons/school.png" event-id="school-start-event"
+				event-icon="school.png" event-id="school-start-event"
 				title="September 2004" 
 				description="In September 2004, I started my first day of Kindergarten" 
 			}}
 			{{> timeline/ticks/event-tick type="half-tick" year=2005 
-				event-icon="img/event-icons/hockey.png" event-id="hockey-start-event"
+				event-icon="hockey.png" event-id="hockey-start-event"
 				title="Octoberr 2005" 
 				description="In Octoberr 2004, I started my first day of year of competitive hockey. I would play until I was 18." 
 			}}

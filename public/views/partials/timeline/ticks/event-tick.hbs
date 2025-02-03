@@ -1,9 +1,9 @@
 <div class="{{type}}" style="left: calc(({{year}} - 1998) * 200px);">
   <div class="tick-label">{{year}}</div>
 	<div class="event-indicator" id="{{event-id}}">
-    <img src="{{event-icon}}" alt="Event Image" /i>
+    <img src="img/event-icons/{{event-icon}}" alt="Event Image" /i>
 		<div class="event-card">
-			{{> timeline/event-card title=title description=description }}
+			{{> timeline/event-card title=title description=description event-picture=event-picture}}
 		</div>
   </div>
 	<div class="micro-ticks">
