@@ -60,7 +60,7 @@ body {
 	border-radius: 2px;
 	box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
 	top: -5px;
-	cursor: pointer; /* Change cursor to pointer */
+	cursor: default;
 	z-index: 10; /* Ensure ticks are above the timeline line */
 }
 
@@ -101,12 +101,11 @@ body {
 	font-weight: 800;
 }
 
-.half-tick .tick-label:hover {
-	font-size: calc(1.1 * 35px); /* Increase by 20% */
-}
-
+.tick-label:hover,
+.half-tick .tick-label:hover,
 .decade-tick .tick-label:hover {
-	font-size: calc(1.1 * 50px); /* Increase by 20% */
+	color: white;
+	display: block; /* Show label on hover */
 }
 
 .event-indicator {
@@ -125,9 +124,11 @@ body {
 
 .event-indicator:hover {
 	color: white;
+	cursor: default;
+	top: -13px;
 	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
-	height: calc(1.3 * 25px); /* Increase by 20% */
-	width: calc(1.3 * 25px); /* Increase by 20% */
+	height: calc(1.5 * 25px); /* Increase by 20% */
+	width: calc(1.5 * 25px); /* Increase by 20% */
 }
 
 .event-indicator:hover .event-card {
