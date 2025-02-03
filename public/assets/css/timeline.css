@@ -35,7 +35,7 @@ body {
 	height: 4px;
 	background-color: white;
 	margin: 20px 0;
-	box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
+	box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5);
 }
 
 .micro-ticks {
@@ -110,6 +110,7 @@ body {
 
 .event-indicator {
 	position: absolute;
+
 	display: flex; /* Use flexbox */
 	align-items: center; /* Center vertically */
 	justify-content: center; /* Center horizontally */
@@ -124,20 +125,20 @@ body {
 
 .event-indicator:hover {
 	color: white;
-	cursor: default;
+	cursor: pointer;
 	top: -13px;
 	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
 	height: calc(1.5 * 25px); /* Increase by 20% */
 	width: calc(1.5 * 25px); /* Increase by 20% */
 }
 
-.event-indicator:hover .event-card {
-	display: block; /* Show event card on hover */
-}
-
-.event-indicator img {
+#event-icon {
 	width: 50%;
 	height: 50%;
+}
+
+.event-indicator:hover .event-card {
+	display: block; /* Show event card on hover */
 }
 
 #birth-event {
