@@ -1,15 +1,4 @@
-@font-face {
-	font-family: "CustomFont";
-	src: url("/path/to/font.woff2") format("woff2"),
-		url("/path/to/font.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-}
-
-body {
-	height: 100%;
-	font-family: "CustomFont", sans-serif;
-}
+/* -------------- Timeline -------------- */
 
 .timeline-container {
 	left: 100px;
@@ -38,12 +27,15 @@ body {
 	box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.5);
 }
 
-.micro-ticks {
+/* Position Micro Ticks */
+.micro-ticks-container {
 	position: relative;
 	width: 100%;
 	height: 100%;
 	top: 1px;
 }
+
+/* -------------- Ticks -------------- */
 
 .micro-tick {
 	position: absolute;
@@ -52,6 +44,7 @@ body {
 	background-color: white;
 }
 
+/* Set default tick style */
 .tick,
 .half-tick,
 .decade-tick {
@@ -78,6 +71,8 @@ body {
 	height: 26px; /* Corrected height */
 	width: 5px; /* Corrected width */
 }
+
+/* -------------- Tick Labels -------------- */
 
 .tick-label {
 	color: rgb(246, 245, 245);
