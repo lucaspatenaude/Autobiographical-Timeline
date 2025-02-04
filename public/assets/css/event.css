@@ -2,7 +2,7 @@
 
 .event-indicator {
 	position: absolute;
-	z-index: 98;
+	/* z-index: 98; */
 	display: flex; /* Use flexbox */
 	align-items: center; /* Center vertically */
 	justify-content: center; /* Center horizontally */
@@ -18,7 +18,7 @@
 .event-indicator:hover {
 	color: white;
 	cursor: pointer;
-	top: -13px;
+	top: -18px;
 	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
 	height: calc(1.5 * 25px); /* Increase by 20% */
 	width: calc(1.5 * 25px); /* Increase by 20% */
@@ -31,7 +31,7 @@
 
 /* Show event card on hover */
 .event-indicator:hover .event-card {
-	display: block; 
+	display: block;
 }
 
 /* -------------- Event Card Styling -------------- */
@@ -40,8 +40,7 @@
 	display: none; /* Hide event card by default */
 	position: absolute;
 	left: -50px;
-  height: 300px;
-	z-index: 99; /* Ensure it appears above other elements */
+	height: 300px;
 	margin-bottom: 600px;
 }
 
@@ -49,7 +48,6 @@
 	display: flex;
 	flex-direction: row; /* Place photo and content in a row */
 	align-items: flex-start; /* Align items to the top */
-
 }
 
 .event-content {
@@ -89,7 +87,6 @@
 	box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8);
 }
 
-
 /* -------------- Event Spacing on Timeline -------------- */
 
 #birth-event {
@@ -118,4 +115,20 @@
 
 #high-school-start-event {
 	transform: translateX(120px);
+}
+
+#graduation-event {
+	transform: translateX(55px);
+}
+
+#college-start-event {
+	transform: translateX(110px);
+}
+
+#associates-graduation-event {
+	transform: translateX(60px);
+}
+
+#CU-start-event {
+	transform: translateX(110px);
 }
