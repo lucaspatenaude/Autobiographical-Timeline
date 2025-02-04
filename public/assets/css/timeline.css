@@ -54,7 +54,7 @@
 	box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.5);
 	top: -5px;
 	cursor: default;
-	z-index: 3; 
+	z-index: 3;
 }
 
 .tick {
@@ -63,13 +63,13 @@
 }
 
 .half-tick {
-	height: 20px; 
-	width: 6px; 
+	height: 20px;
+	width: 6px;
 }
 
 .decade-tick {
-	height: 26px; 
-	width: 5px; 
+	height: 26px;
+	width: 5px;
 }
 
 /* -------------- Tick Labels -------------- */
@@ -103,3 +103,36 @@
 	display: block; /* Show label on hover */
 }
 
+/* -------------- Key -------------- */
+
+.key {
+	position: absolute;
+	top: 50%; /* Center vertically */
+	transform: translateY(-50%); /* Adjust for centering */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	color: black;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.key-item {
+	display: flex;
+	align-self: start;
+	margin-bottom: 10px;
+}
+
+.key-item img {
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+}
+
+.key-item p {
+	color: rgb(0, 0, 0);
+	margin: 0;
+	font-size: 14px;
+}
