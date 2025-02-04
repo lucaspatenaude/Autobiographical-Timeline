@@ -53,7 +53,8 @@
 .event-content {
 	background-color: rgb(238, 132, 18);
 	border: 4px solid rgb(178, 101, 6); /* Black border */
-
+	min-width: 300px;
+	max-width: 600px;
 	text-shadow: none;
 	border-radius: 8px;
 	display: flex;
@@ -74,6 +75,10 @@
 	margin: 0;
 	font-size: 13px;
 	color: rgb(255, 255, 255);
+	overflow: hidden; /* Hide overflow text */
+	text-overflow: ellipsis; /* Add ellipsis (...) for overflow text */
+	overflow-wrap: break-word; /* Allow text to wrap and break within words */
+	white-space: normal; /* Allow text to wrap */
 }
 
 .event-photo {
