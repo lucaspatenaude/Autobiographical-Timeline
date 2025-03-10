@@ -1,5 +1,5 @@
-# Use the official Node.js image as the base image
-FROM node:lts
+# Use the official Node.js image as the base image for x86_64 architecture
+FROM --platform=linux/amd64 node:lts
 
 # Set the working directory inside the container
 WORKDIR /home/node/app
